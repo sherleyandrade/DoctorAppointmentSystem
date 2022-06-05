@@ -1,0 +1,16 @@
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="doctor"
+)
+
+mycursor = mydb.cursor()
+
+sql_query = "DELETE FROM all_top_doctors WHERE Pid = '0'"
+
+mycursor.execute(sql_query)
+
+mydb.commit()
+

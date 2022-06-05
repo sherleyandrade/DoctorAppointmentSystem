@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+   background-color: 
+}
+
+.responsive {
+  width: 100%;
+  height: 641px;
+  margin-top: 20px;
+
+  background-image: url("image2.jpg");
+
+  min-height: 380px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navigation{
+  position: fixed;
+  width: 70px;
+  height: 100%;
+  background-color: #034F60;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation:hover,
+.navigation.active{
+  width: 300px;
+}
+
+.navigation ul{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+.navigation ul li{
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: nowrap;
+
+}
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul li a i{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon .fas{
+  font-size: 24px;
+}
+
+.navigation  ul li:hover{
+  background-color: #014;
+}
+
+@media (max-width: 350px)
+{
+  .navigation
+  {
+    left:-60px;
+  }
+  .navigation.active
+  {
+    left:0px;
+    width: 100%;
+  }
+}
+
+input[type=text], [type=date] {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 28px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #034F60;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 0px -13px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.responsive .subcontainer {
+  position: absolute;
+  margin-top: 40px;
+  width: 260px;
+  padding: 16px;
+  background-color: white;
+  left: 25%;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+   background-color: 
+}
+
+.responsive {
+  width: 100%;
+  height: 641px;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+
+.navigation{
+  margin-top: 20px;
+  position: fixed;
+  width: 70px;
+  height: 100%;
+  background-color: #034F60;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.navigation:hover,
+.navigation.active{
+  width: 300px;
+}
+
+.navigation ul{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+}
+.navigation ul li{
+  position: relative;
+  width: 100%;
+  list-style: none;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: nowrap;
+
+}
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation ul li a i{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon .fas{
+  font-size: 24px;
+}
+
+.navigation  ul li:hover{
+  background-color: #014;
+}
+
+@media (max-width: 350px)
+{
+  .navigation
+  {
+    left:-60px;
+  }
+  .navigation.active
+  {
+    left:0px;
+    width: 100%;
+  }
+}
